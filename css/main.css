@@ -53,20 +53,28 @@ html {
   position: absolute;
   top: calc(50% - 14px);
   left: calc(50% - 14px);
-
 }
 
 .buttons{
   position: relative;
-  width: 250px;
+  width: 235px;
   margin: 0 auto;
-  padding: .5em;
-  
+  padding: .5em; 
+}
+
+.button-r:hover {
+  color: black;
+  background-color: white;
+}
+
+.button-g:hover {
+  color: black;
+  background-color: white;
 }
 
 .button-g {
   position: absolute;
-  top: 50px;
+  top: 40px;
   left: 0;
   text-decoration: none;
   color: white;
@@ -76,11 +84,12 @@ html {
   text-align: center;
   -moz-border-radius: 55px;
   border-radius: 55px;
+  transition: all 700ms ease-in-out;
 }
 
 .button-r {
   position: absolute;
-  top: 50px;
+  top: 40px;
   right: 0;
   text-decoration: none;
   color: white;
@@ -90,4 +99,5 @@ html {
   text-align: center;
   -moz-border-radius: 55px;
   border-radius: 55px;
+  transition: all 700ms ease-in-out;
 }
