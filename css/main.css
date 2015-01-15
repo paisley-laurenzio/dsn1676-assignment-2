@@ -27,19 +27,67 @@ html {
   width: 300px;
   background-image: url(../img/clock-face.svg);
   Position: relative;
-    margin: 0 auto;
+  top: 200px;
+  margin: 0 auto;
 }
 
 .hand {
   width: 14px;
   position: absolute;
-  bottom: 143px;
-  left: 143px;
+  bottom: 50%;
+  left: calc(50% - 7px);
+  transition: all 6s linear;
+  transform-origin: bottom center;
+}
+
+.clock-face:target .hand-hour {
+  transform: rotate(360deg);
+}
+
+.clock-face:target .hand-minute {
+  transform: rotate(4320deg);
 }
 
 .center {
   width: 28px;
-    position: absolute;
-  top: 136px;
-  left: 136px;
+  position: absolute;
+  top: calc(50% - 14px);
+  left: calc(50% - 14px);
+
+}
+
+.buttons{
+  position: relative;
+  width: 250px;
+  margin: 0 auto;
+  padding: .5em;
+  
+}
+
+.button-g {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  line-height: 100px;
+  width: 100px;
+  text-align: center;
+  -moz-border-radius: 55px;
+  border-radius: 55px;
+}
+
+.button-r {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  line-height: 100px;
+  width: 100px;
+  text-align: center;
+  -moz-border-radius: 55px;
+  border-radius: 55px;
 }
